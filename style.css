@@ -1,0 +1,187 @@
+/* 화질깨짐방지 (이미지) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  color: #e1e1e1;
+  image-rendering: -moz-crisp-edges; /* firefox */
+  image-rendering: -o-crisp-edges; /* opera */
+  image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+  image-rendering: crisp-edges;
+  -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라(신) */
+  -ms-text-size-adjust: none; /* IE */
+  -moz-text-size-adjust: none; /* 파이어폭스 */
+  -o-text-size-adjust: none; /* 오페라(구)*/
+}
+
+/* 폰트 두께 */
+.font-weight-100 {
+  font-weight: 100;
+}
+.font-weight-200 {
+  font-weight: 200;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-800 {
+  font-weight: 800;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+/* 글꼴 */
+.font-family-1 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.font-family-2 {
+  font-family: "Noto Sans", sans-serif;
+}
+/* 폰트사이즈 */
+.font-35 {
+  font-size: 35px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-12 {
+  font-size: 12px;
+}
+/* 색상 */
+.color-black {
+  color: black;
+}
+.color-e1e1e1 {
+  color: #e1e1e1;
+}
+.color-0081c9 {
+  color: #0081c9;
+}
+.color-white {
+  color: white;
+}
+.color-black {
+  color: black;
+}
+/* 폰트끝 */
+
+.navbar-nav li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+/* 슬라이드 텍스트 위치조정 */
+.carousel-top {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 슬라이드 반투명 배경 */
+.header-backgroundcolor {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* 슬라이드 전체높이 크기 */
+.carousel-item > .w-100 {
+  height: 80vh;
+}
+/* section1 위치조정 */
+.section1 {
+  position: relative;
+  bottom: 70px;
+  z-index: 1;
+}
+/* 아이콘이미지 */
+.icon-img {
+  width: 30%;
+}
+.back {
+  margin-top: -70px;
+  background-color: #0081c9;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*  */
+/* Mobile  전환 */
+@media (max-width: 991px) {
+  /* PC 네비게이션 숨기기 */
+  #navbar-pc {
+    display: none;
+  }
+  /* Mobile 네비게이션 보이기 */
+  #navbar-mobile {
+    display: block;
+  }
+  #carouselExampleFade {
+    top: 5vh;
+  }
+  .carousel-top {
+    height: 50%;
+  }
+  .carousel-item > .w-100 {
+    height: 100vh;
+  }
+}
+/* PC전환 */
+@media (min-width: 991px) {
+  /* PC 네비게이션 보이기 */
+  #navbar-pc {
+    display: block;
+  }
+  /* Mobile 네비게이션 숨기기 */
+  #navbar-mobile {
+    display: none;
+  }
+}
+/* 네비게이션바 크기수정 */
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+}
+/* 폰트사이즈 */
+@media (max-width: 767px) {
+  .carousel-caption > .font-35 {
+    font-size: 25px;
+  }
+  .carousel-caption > .font-25 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-caption p {
+    width: 100%;
+  }
+}
+
+/* 폰트사이즈 */
