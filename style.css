@@ -6,7 +6,7 @@
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  color: #e1e1e1;
+  color: black;
   image-rendering: -moz-crisp-edges; /* firefox */
   image-rendering: -o-crisp-edges; /* opera */
   image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
@@ -53,17 +53,23 @@
   font-family: "Noto Sans", sans-serif;
 }
 /* 폰트사이즈 */
-.font-35 {
-  font-size: 35px;
-}
-.font-25 {
-  font-size: 25px;
+.font-12 {
+  font-size: 12px;
 }
 .font-15 {
   font-size: 15px;
 }
-.font-12 {
-  font-size: 12px;
+.font-18{
+  font-size: 18px;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-35 {
+  font-size: 35px;
 }
 /* 색상 */
 .color-black {
@@ -82,6 +88,9 @@
   color: black;
 }
 /* 폰트끝 */
+#navbar-pc {
+  border-bottom: 1px solid rgb(84, 83, 83);
+}
 
 .navbar-nav li {
   font-family: "Noto Sans KR", sans-serif;
@@ -110,25 +119,32 @@
 }
 /* 슬라이드 전체높이 크기 */
 .carousel-item > .w-100 {
-  height: 80vh;
+  height: 100vh;
 }
-/* section1 위치조정 */
-.section1 {
-  position: relative;
-  bottom: 70px;
-  z-index: 1;
+.carousel-caption > .font-35 {
+  font-size: 19px;
+  color: #e1e1e1;
 }
+.carousel-caption > .font-25 {
+  font-size: 15px;
+  color: #e1e1e1;
+}
+
+
 /* 아이콘이미지 */
 .icon-img {
   width: 30%;
 }
-.back {
-  margin-top: -70px;
-  background-color: #0081c9;
-  width: 100vw;
-  height: 100vh;
+#section1 {
+  margin-top: 50px;
 }
 
+/*  */
+
+#box-link {
+  padding: 20px;
+  margin-top: 15px;
+}
 /*  */
 /* Mobile  전환 */
 @media (max-width: 991px) {
@@ -143,12 +159,15 @@
   #carouselExampleFade {
     top: 5vh;
   }
+
   .carousel-top {
     height: 50%;
   }
   .carousel-item > .w-100 {
     height: 100vh;
   }
+
+
 }
 /* PC전환 */
 @media (min-width: 991px) {
@@ -161,6 +180,43 @@
     display: none;
   }
 }
+
+@media (min-width: 320px) {
+  .carousel-item > .dl {
+    height: 100vh;
+  }
+  .carousel-caption > .font-35 {
+    font-size: 19px;
+  }
+  .carousel-caption > .font-25 {
+    font-size: 15px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+  #section1 {
+      background-color: #040840
+  }
+  #section1 .row{
+    margin-top: -10.5vh;
+    height: 50vh;
+    align-items: center;
+  }
+  #section2 .row{
+padding-top: 8vh;
+  }
+  #section2 .container{
+    background-color: rgb(252, 247, 247);
+  }
+  #section2 p{
+    margin-top: 20px;
+  }
+
+  #section2 .section2-header{
+
+  }
+  
+}
 /* 네비게이션바 크기수정 */
 @media (max-width: 991px) {
   .navbar-toggler-icon {
@@ -169,19 +225,17 @@
   }
 }
 /* 폰트사이즈 */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .carousel-caption > .font-35 {
     font-size: 25px;
   }
   .carousel-caption > .font-25 {
     font-size: 15px;
   }
-}
+} */
 
 @media (max-width: 767px) {
-  .carousel-caption p {
-    width: 100%;
-  }
+
 }
 
 /* 폰트사이즈 */
